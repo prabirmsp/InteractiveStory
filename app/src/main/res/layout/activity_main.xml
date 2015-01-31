@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_material_light">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleImageView"
+        android:src="@drawable/main_title"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="false"
+        android:adjustViewBounds="true"
+        android:contentDescription="SignalsFromMars"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START YOUR ADVENTURE"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:textColor="#ff3a8aec" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEditText"
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentStart="true"
+        android:hint="Enter Your Name to Begin"
+        android:maxLines="1"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:imeOptions="actionDone"/>
+
+
+
+</RelativeLayout>
